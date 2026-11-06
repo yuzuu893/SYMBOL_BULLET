@@ -608,7 +608,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Battle/Common
+    - Assets/Scripts/Battle
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -632,7 +632,7 @@ MonoBehaviour:
       m_Data: 78858
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 49564
+    - m_Data: 49862
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -665,7 +665,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 49564
+    - m_Data: 49862
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1374,7 +1374,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 0.89023477, y: -0.5178829, z: -0.06683773}
+    m_Target: {x: 0.4962576, y: 1.4480569, z: -0.069999576}
     speed: 2
     m_Value: {x: 0.89023477, y: -0.5178829, z: -0.06683773}
   m_RenderMode: 0
@@ -1426,7 +1426,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.026301
+    m_Target: 7.3424845
     speed: 2
     m_Value: 7.026301
   m_Ortho:

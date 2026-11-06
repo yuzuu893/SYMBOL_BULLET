@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BulletPatternData
   type: 5
   bulletPrefab: {fileID: 8591082356436110044, guid: 46168479bb85f4d42a063a66f14fc2f0, type: 3}
-  fireInterval: 0.7
+  fireInterval: 0.5
   bulletSpeed: 4
   damage: 1
-  bulletCount: 8
+  bulletCount: 14
   startAngle: 90
   rotationPerShot: 10
   fanSpread: 60

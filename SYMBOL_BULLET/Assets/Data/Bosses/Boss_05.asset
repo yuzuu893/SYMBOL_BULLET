@@ -12,19 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 852fc53c3a9922d48a22cc435fdbce4e, type: 3}
   m_Name: Boss_05
   m_EditorClassIdentifier: Assembly-CSharp::BossData
-  bossId: BOSS_01
-  displayName: Boss
-  symbol: "\u3007"
+  bossId: BOSS_05
+  displayName: Composite
+  symbol: "\u203B"
   bossColor: {r: 1, g: 0, b: 0, a: 1}
-  maxHP: 300
+  maxHP: 350
   phase2Threshold: 0.7
   phase3Threshold: 0.35
   initialDeley: 1
   phaseChangeDeley: 1.5
   phases:
-  - label: Phase
-    patterns: []
-  - label: Phase
-    patterns: []
-  - label: Phase
-    patterns: []
+  - label: Phase1
+    patterns:
+    - {fileID: 11400000, guid: a5e4bb98904d8cb419283d6f362b2306, type: 2}
+    - {fileID: 11400000, guid: 26d4efbc7c0ef6948aef2407f63f2dc7, type: 2}
+  - label: Phase2
+    patterns:
+    - {fileID: 11400000, guid: ddfc6a034bf4b4749ac048d63d9f8257, type: 2}
+    - {fileID: 11400000, guid: 6fe6d40d5ecdebf41b8f5250c16afdd5, type: 2}
+  - label: Phase3
+    patterns:
+    - {fileID: 11400000, guid: e4643221e63e37f44b5033785cfae873, type: 2}
+    - {fileID: 11400000, guid: d7b08e9a9f69fc84bbb9ce98dff5de5f, type: 2}
+    - {fileID: 11400000, guid: 6fe3040ae1f7f19469009a848225f483, type: 2}

@@ -632,23 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3a05555f033d3d43ab184af1986980a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossController
-  phase2Threshold: 0.7
-  phase3Threshold: 0.35
-  initialDeley: 1
-  phaseChangeDeley: 1.5
-  phases:
-  - label: Phase1
-    patterns:
-    - {fileID: 11400000, guid: ddfc6a034bf4b4749ac048d63d9f8257, type: 2}
-  - label: Phase2
-    patterns:
-    - {fileID: 11400000, guid: c18c13a2fd5a46a429e564b54639115e, type: 2}
-    - {fileID: 11400000, guid: ddfc6a034bf4b4749ac048d63d9f8257, type: 2}
-  - label: Phase3
-    patterns:
-    - {fileID: 11400000, guid: 6fdb3b6594ac0fd439c01020ed675f9b, type: 2}
-    - {fileID: 11400000, guid: c18c13a2fd5a46a429e564b54639115e, type: 2}
-    - {fileID: 11400000, guid: ddfc6a034bf4b4749ac048d63d9f8257, type: 2}
+  data: {fileID: 11400000, guid: e6abe22a0903e8443bf4b54634fc4d46, type: 2}
 --- !u!1 &1196972996
 GameObject:
   m_ObjectHideFlags: 0

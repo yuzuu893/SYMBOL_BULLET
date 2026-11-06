@@ -632,7 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3a05555f033d3d43ab184af1986980a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossController
-  data: {fileID: 11400000, guid: e6abe22a0903e8443bf4b54634fc4d46, type: 2}
+  data: {fileID: 11400000, guid: 9a8d2c2422888eb4d8a79e08a565a416, type: 2}
 --- !u!1 &1196972996
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,6 +1435,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 830170442}
+    - target: {fileID: 2398068907455485107, guid: 6677d2ca1734a1f4ba8cfa8fec85a3d3, type: 3}
+      propertyPath: bossController
+      value: 
+      objectReference: {fileID: 1044469086}
     - target: {fileID: 6310394749521261784, guid: 6677d2ca1734a1f4ba8cfa8fec85a3d3, type: 3}
       propertyPath: m_Name
       value: BattleManager

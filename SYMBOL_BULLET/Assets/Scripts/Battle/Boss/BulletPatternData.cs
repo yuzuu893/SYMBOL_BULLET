@@ -17,7 +17,7 @@ public enum PatternType
 /// 弾幕パターン1用データ
 /// 実行中に値を書き換えないよう注意
 /// </summary>
-[CreateAssetMenu(fileName ="Pattern_New", menuName ="Symbolbullet/Bullet Pattern")]
+[CreateAssetMenu(fileName ="Pattern_New", menuName ="SymbolBullet/Bullet Pattern")]
 public class BulletPatternData : ScriptableObject
 {
     [Header("共通設定")]

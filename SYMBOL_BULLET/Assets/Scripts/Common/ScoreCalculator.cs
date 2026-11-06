@@ -15,7 +15,7 @@ public struct ScoreResult
 /// 他のシステムには干渉しない
 /// </summary>
 [Serializable]
-public class ScoreCalculator : MonoBehaviour
+public class ScoreCalculator
 {
     [Tooltip("ボス撃破時の基本得点")]
     [SerializeField] private int basePoints = 10000;

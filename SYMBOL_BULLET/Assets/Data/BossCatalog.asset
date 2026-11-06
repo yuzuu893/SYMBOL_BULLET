@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 375886b432f0f69408a56c825a686405, type: 3}
+  m_Name: BossCatalog
+  m_EditorClassIdentifier: Assembly-CSharp::BossCatalog
+  bosses:
+  - {fileID: 11400000, guid: 9a8d2c2422888eb4d8a79e08a565a416, type: 2}
+  - {fileID: 11400000, guid: 1ded75adeb29a104ab66343acc46d5f2, type: 2}
+  - {fileID: 11400000, guid: 4c287f9cad3c0dd498c7405cbe0bdfb0, type: 2}
+  - {fileID: 11400000, guid: 80bc520c78e384d4cb65796301690d30, type: 2}
+  - {fileID: 11400000, guid: e6abe22a0903e8443bf4b54634fc4d46, type: 2}

@@ -56,6 +56,9 @@ public class BossController : MonoBehaviour
 
     private void Start()
     {
+        // ボス選択から来た場合は、選択されたデータを優先する（なければInspectorのData）
+        if (BattleContext.SelectedBoss != null) data = BattleContext.SelectedBoss;
+
         if (data == null)
         {
             Debug.LogError("[BossController] Dataが設定されてません", this);

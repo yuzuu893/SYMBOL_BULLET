@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 /// <summary>戦闘の状態</summary>
@@ -25,6 +24,12 @@ public class BattleManager : MonoBehaviour
     [Header("スコア")]
     [SerializeField] private ScoreCalculator scoreCalculator = new ScoreCalculator();
 
+    [Header("結果画面への遷移")]
+    [Tooltip("勝敗確定から結果画面へ移るまでの待ち時間（実時間・秒）。")]
+    [SerializeField] private float resultDelay = 1.5f;
+
+    private bool transitionStarted;
+
     public BattleState State { get; private set; } = BattleState.Playing;
     public float ElapsedTime { get; private set; }
 
@@ -37,6 +42,7 @@ public class BattleManager : MonoBehaviour
         Time.timeScale = 1f;
         State = BattleState.Playing;
         ElapsedTime = 0f;
+        transitionStarted = false;
 
         // 前回の結果を消す（選択中のボスは残す）
         BattleContext.ClearResult();
@@ -69,13 +75,6 @@ public class BattleManager : MonoBehaviour
         if (State == BattleState.Playing)
         {
             ElapsedTime += Time.deltaTime;
-            return;
-        }
-
-        // 【テスト用】勝敗確定後、Rキーでリトライ。5-Dで結果画面に置き換える
-        if (Keyboard.current != null && Keyboard.current.rKey.wasPressedThisFrame)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
@@ -118,6 +117,19 @@ public class BattleManager : MonoBehaviour
 
         Time.timeScale = 0f; // 全体を停止（UIは影響を受けない）
         OnBattleEnded?.Invoke(result);
+
+        if (!transitionStarted)
+        {
+            transitionStarted = true;
+            StartCoroutine(GoToResult());
+        }
+    }
+
+    private System.Collections.IEnumerator GoToResult()
+    {
+        // timeScale=0 でも進むよう実時間で待つ
+        yield return new WaitForSecondsRealtime(resultDelay);
+        SceneManager.LoadScene(SceneNames.Result);
     }
 
     // 選択中のボスID。単体テスト時はBossControllerのDataから取る

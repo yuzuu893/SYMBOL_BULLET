@@ -63,7 +63,7 @@ public class BattleHUD : MonoBehaviour
     {
         if (resultText == null) return;
         string title = state == BattleState.Cleared ? "CLEAR" : "GAME OVER";
-        resultText.text = $"{title}\n<size=40%>Rキーでリトライ（仮）</size>";
+        resultText.text = title;
         resultText.gameObject.SetActive(true);
     }
 }
